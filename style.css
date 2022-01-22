@@ -4,39 +4,37 @@ body {
   background-color: rgb(214, 211, 214);
   margin: 0%;
 }
-ul div{
-    display: flex;
-    column-gap: 20px;
-    list-style-type: none;
-    align-items: center;
-    color: aliceblue;
+ul div {
+  display: flex;
+  column-gap: 20px;
+  list-style-type: none;
+  align-items: center;
+  color: aliceblue;
 }
-nav ul{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(87, 42, 117);
-    padding: 15px 30px;
-    margin-top: 0%;
-    margin-bottom: 0px;
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(87, 42, 117);
+  padding: 15px 30px;
+  margin-top: 0%;
+  margin-bottom: 0px;
 }
-nav ul img{
-    width: 30px;
+nav ul img {
+  width: 30px;
 }
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.container{
-    margin-top: 30px;
-    background-color: white;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 10px;
-    padding: 40px;
-    justify-content: center;
-    width: 800px;
-
-    
+.container {
+  margin-top: 30px;
+  background-color: white;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 40px;
+  justify-content: center;
+  width: 800px;
 }
 /* Player Section Starts*/
 .top-players-body {
@@ -58,72 +56,112 @@ main{
   margin-left: 15px;
 }
 /* Player Section Ends*/
-hr{
-    height: 1px;
-    background-color: rgb(173, 172, 173);
+hr {
+  height: 1px;
+  background-color: rgb(173, 172, 173);
 }
 /* Blog Section Starts*/
-.top-blogs-body{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-content: center;
-    column-gap: 30px;
-    row-gap: 15px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+.top-blogs-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
-article{
-    display: flex;
-    row-gap: 15px;
-    align-items: center;
+article {
+  display: flex;
+  row-gap: 15px;
+  align-items: center;
 }
-.blog-details{
-    margin-left: 15px;
+.blog-details {
+  margin-left: 15px;
 }
-article img{
-    height: 117px;
-    width: 177px;
+article img {
+  height: 117px;
+  width: 177px;
 }
 /* Blog Section Ends*/
-.course{
-    justify-content: center;
+.course {
+  justify-content: center;
 }
-.course-body{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 25px;
-    row-gap: 15px;
+.course-body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 25px;
+  row-gap: 15px;
 }
-.course img{
-    height: 104px;
-    width: 224px;
-    position: relative;
-    /* left: 23px; */
+.course img {
+  height: 115px;
+  width: 235px;
 }
-.course-miscellaneous{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
+.course-miscellaneous {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
 }
-.rating{
-    display: flex;
+.rating {
+  display: flex;
 }
-.duration{
-    background-color: rgb(241, 181, 191);
-    border: 1px solid rgb(241, 181, 191);
-    border-radius: 20px;
+.duration {
+  background-color: rgb(241, 181, 191);
+  border: 1px solid rgb(241, 181, 191);
+  border-radius: 20px;
+  padding: 0px 12px;
+  width: 67%;
+  align-items: center;
+}
+.duration small {
+  margin-right: 13px;
+}
+.star {
+  display: flex;
+}
+.fa-star {
+  color: silver;
+}
+.fa-star.not-null {
+  color: orange;
+}
+
+/* Media Query */
+@media only screen and (max-width: 688px) {
+  ul div {
+    column-gap: 10px;
+  }
+  section {
+    width: 70%;
+  }
+  .container {
+    width: 90%;
+    padding: 25px 15px;
+  }
+  .top-players-body {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .top-blogs-body {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  article{
+    flex-direction: column;
+  }
+  article img {
+    height: 125px;
+    width: 225px;
+  }
+
+  .course-body {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .course img {
+    height: 120px;
+    width: 225px;
+  }
+  .duration{
     padding: 0px 12px;
-    width: 67%;
-}
-.duration small{
-    margin-right: 13px;
-}
-.star{
-    display: flex;
-}
-.fa-star{
-    color: silver;
-}
-.fa-star.not-null{
-    color: orange;
+    width: 85px;
+  }
+  
 }
