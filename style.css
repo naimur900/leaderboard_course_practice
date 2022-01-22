@@ -154,6 +154,7 @@ article img {
 
   .course-body {
     grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
   }
   .course img {
     height: 120px;
